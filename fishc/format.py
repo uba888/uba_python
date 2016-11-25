@@ -1,0 +1,7 @@
+sz=int(input("print q exit;please input a sz:"))
+z16='%X' % (sz)
+z8='%o' % (sz)
+#z2='%b' % (sz)
+print('z16 is:'+z16)
+print('z8 is :'+z8)
+#print('zb is :'+z2)

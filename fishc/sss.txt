@@ -1,0 +1,17 @@
+/test/test/fishc/qa.py
+/test/test/fishc/cs7.py
+/test/test/fishc/format.py
+/test/test/fishc/cs9.py
+/test/test/fishc/ssc.py
+/test/test/fishc/check.py
+/test/test/fishc/cs1.py
+/test/test/fishc/cs8.py
+/test/test/fishc/cs4.py
+/test/test/fishc/cs6.py
+/test/test/fishc/pow.py
+/test/test/fishc/cs3.py
+/test/test/fishc/test.py
+/test/test/fishc/cs2.py
+/test/test/fishc/def.py
+/test/test/fishc/replace.py
+/test/test/fishc/cs5.py
