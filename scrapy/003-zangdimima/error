@@ -1,0 +1,135 @@
+##############################################################################################
+uba_tomcat@tomcat:/alidata/uba_python/scrapy/003-zangdimima$ python3 zdmm.py 
+藏地密码内容简介
+藏地密码序
+第一部战獒传说 第1章 从一张照片说起
+第一部战獒传说 1.1照片里的秘密
+第一部战獒传说 1.2第一个疯子
+第一部战獒传说 1.3方新的课
+第一部战獒传说 第二章 紫麒麟传说
+第一部战獒传说 2.1第二个疯子
+第一部战獒传说 2.2 戈巴族人
+第一部战獒传说 2.3 达瓦努错的智者
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 414, in _make_request
+    httplib_response = conn.getresponse(buffering=True)
+TypeError: getresponse() got an unexpected keyword argument 'buffering'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 562, in urlopen
+    body=body, headers=headers)
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 416, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/lib/python3.4/http/client.py", line 1171, in getresponse
+    response.begin()
+  File "/usr/lib/python3.4/http/client.py", line 351, in begin
+    version, status, reason = self._read_status()
+  File "/usr/lib/python3.4/http/client.py", line 313, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/lib/python3.4/socket.py", line 374, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 330, in send
+    timeout=timeout
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 612, in urlopen
+    raise MaxRetryError(self, url, e)
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='www.zangdimima8.com', port=80): Max retries exceeded with url: /1/10.html (Caused by <class 'ConnectionResetError'>: [Errno 104] Connection reset by peer)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "zdmm.py", line 58, in <module>
+    get_zhang(main_url)
+  File "zdmm.py", line 36, in get_zhang
+    content=get_content(mulu_site[j])
+  File "zdmm.py", line 46, in get_content
+    response_content=requests.get(url)
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 55, in get
+    return request('get', url, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 44, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 455, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 558, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 378, in send
+    raise ConnectionError(e)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='www.zangdimima8.com', port=80): Max retries exceeded with url: /1/10.html (Caused by <class 'ConnectionResetError'>: [Errno 104] Connection reset by peer)
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+解决方法:http://panyongzheng.iteye.com/blog/1952538
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+##############################################################################################################
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/requests/packages/urllib3/response.py", line 298, in _error_catcher
+    yield
+  File "/usr/local/lib/python3.4/dist-packages/requests/packages/urllib3/response.py", line 593, in read_chunked
+    chunk = self._handle_chunk(amt)
+  File "/usr/local/lib/python3.4/dist-packages/requests/packages/urllib3/response.py", line 558, in _handle_chunk
+    returned_chunk = self._fp._safe_read(self.chunk_left)
+  File "/usr/lib/python3.4/http/client.py", line 664, in _safe_read
+    raise IncompleteRead(b''.join(s), amt)
+http.client.IncompleteRead: IncompleteRead(8221 bytes read, 1857 more expected)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/requests/models.py", line 694, in generate
+    for chunk in self.raw.stream(chunk_size, decode_content=True):
+  File "/usr/local/lib/python3.4/dist-packages/requests/packages/urllib3/response.py", line 428, in stream
+    for line in self.read_chunked(amt, decode_content=decode_content):
+  File "/usr/local/lib/python3.4/dist-packages/requests/packages/urllib3/response.py", line 618, in read_chunked
+    self._original_response.close()
+  File "/usr/lib/python3.4/contextlib.py", line 77, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/usr/local/lib/python3.4/dist-packages/requests/packages/urllib3/response.py", line 316, in _error_catcher
+    raise ProtocolError('Connection broken: %r' % e, e)
+requests.packages.urllib3.exceptions.ProtocolError: ('Connection broken: IncompleteRead(8221 bytes read, 1857 more expected)', IncompleteRead(8221 bytes read, 1857 more expected))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "zdmm.py", line 62, in <module>
+    get_zhang(main_url)
+  File "zdmm.py", line 40, in get_zhang
+    content=get_content(mulu_site[j])
+  File "zdmm.py", line 50, in get_content
+    response_content=requests.get(url)
+  File "/usr/local/lib/python3.4/dist-packages/requests/api.py", line 70, in get
+    return request('get', url, params=params, **kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/requests/api.py", line 56, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/requests/sessions.py", line 488, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/requests/sessions.py", line 641, in send
+    r.content
+  File "/usr/local/lib/python3.4/dist-packages/requests/models.py", line 772, in content
+    self._content = bytes().join(self.iter_content(CONTENT_CHUNK_SIZE)) or bytes()
+  File "/usr/local/lib/python3.4/dist-packages/requests/models.py", line 697, in generate
+    raise ChunkedEncodingError(e)
+requests.exceptions.ChunkedEncodingError: ('Connection broken: IncompleteRead(8221 bytes read, 1857 more expected)', IncompleteRead(8221 bytes read, 1857 more expected))
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+解决方法：
+while True:
+        try:
+            response_content=requests.get(url,headers=get_headers())
+            code=chardet.detect(response_content.content)['encoding']
+            if code=='GB2312':
+                response_content.encoding='GBK'
+            else:
+                response_content.encoding=code
+                xp_content=Selector(text=response_content.text)
+                content=xp_content.xpath('//body/div[@class="container"]//div[@class="span9"]/p/text()').extract()
+                return content
+                break
+        except:
+            pass
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+##########################################################################
+

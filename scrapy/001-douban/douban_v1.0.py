@@ -20,7 +20,6 @@ def get_content(url):
 	href=xp.xpath('//ol[@class="grid_view"]/li//div[@class="info"]/div/a/@href').extract()
 	ps=xp.xpath('//ol[@class="grid_view"]/li//div[@class="info"]/div[@class="bd"]/p[1]').xpath('string(.)').extract()
 	score=xp.xpath('//ol[@class="grid_view"]/li//div[@class="info"]//span[@class="rating_num"]/text()').extract()
-	print(num)
 	if len(href)==len(title)==len(ps)==len(score):
 		for i in range(0,len(title)):
 			#print("#####"+num[i]+"######")
