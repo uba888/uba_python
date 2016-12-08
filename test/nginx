@@ -1,0 +1,630 @@
+server
+{
+    listen 80;
+    server_name lsh.pz.shlwed.cn;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:9002;
+    }
+    access_log /alidata/nginx_logs/lsh.pz.shlwed.cn_access.log;
+    error_log /alidata/nginx_logs/lsh.pz.shlwed.cn_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsh.baidu.shlwed.cn;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:9002;
+    }
+    access_log /alidata/nginx_logs/lsh.baidu.shlwed.cn_access.log;
+    error_log /alidata/nginx_logs/lsh.baidu.shlwed.cn_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsh.baidu.iswarov.cn;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:9002;
+    }
+    access_log /alidata/nginx_logs/lsh.baidu.iswarov.cn_access.log;
+    error_log /alidata/nginx_logs/lsh.baidu.iswarov.cn_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsh.bdlp.bj.swanrov.cn;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:9002;
+    }
+    access_log /alidata/nginx_logs/lsh.bdlp.bj.swanrov.cn_access.log;
+    error_log /alidata/nginx_logs/lsh.bdlp.bj.swanrov.cn_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsh.baidu.bj.swanrov.cn;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:9002;
+    }
+    access_log /alidata/nginx_logs/lsh.baidu.bj.swanrov.cn_access.log;
+    error_log /alidata/nginx_logs/lsh.baidu.bj.swanrov.cn_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsh.360.shlwed.cn;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:9002;
+    }
+    access_log /alidata/nginx_logs/lsh.360.shlwed.cn_access.log;
+    error_log /alidata/nginx_logs/lsh.360.shlwed.cn_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsh.360.bj.iswarov.cn;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:9002;
+    }
+    access_log /alidata/nginx_logs/lsh.360.bj.iswarov.cn_access.log;
+    error_log /alidata/nginx_logs/lsh.360.bj.iswarov.cn_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsh.sougou.shlwed.cn;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:9002;
+    }
+    access_log /alidata/nginx_logs/lsh.sougou.shlwed.cn_access.log;
+    error_log /alidata/nginx_logs/lsh.sougou.shlwed.cn_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsh.sougou.shlwed.com.cn;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:9002;
+    }
+    access_log /alidata/nginx_logs/lsh.sougou.shlwed.com.cn_access.log;
+    error_log /alidata/nginx_logs/lsh.sougou.shlwed.com.cn_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsh.2-sogou.bj.iswarov.com;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:9002;
+    }
+    access_log /alidata/nginx_logs/lsh.2-sogou.bj.iswarov.com_access.log;
+    error_log /alidata/nginx_logs/lsh.2-sogou.bj.iswarov.com_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsh.gdt.shlwed.cn;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:9002;
+    }
+    access_log /alidata/nginx_logs/lsh.gdt.shlwed.cn_access.log;
+    error_log /alidata/nginx_logs/lsh.gdt.shlwed.cn_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsh.gdtx.shlwed.cn;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:9002;
+    }
+    access_log /alidata/nginx_logs/lsh.gdtx.shlwed.cn_access.log;
+    error_log /alidata/nginx_logs/lsh.gdtx.shlwed.cn_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsh.gdt.bj.iswarov.com;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:9002;
+    }
+    access_log /alidata/nginx_logs/lsh.gdt.bj.iswarov.com_access.log;
+    error_log /alidata/nginx_logs/lsh.gdt.bj.iswarov.com_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsh.gdt2.bj.swanrov.cn;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:9002;
+    }
+    access_log /alidata/nginx_logs/lsh.gdt2.bj.swanrov.cn_access.log;
+    error_log /alidata/nginx_logs/lsh.gdt2.bj.swanrov.cn_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsh.zht.bj.swanrov.com;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:9002;
+    }
+    access_log /alidata/nginx_logs/lsh.zht.bj.swanrov.com_access.log;
+    error_log /alidata/nginx_logs/lsh.zht.bj.swanrov.com_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsh.bjpz.m.swanrov.com;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:9002;
+    }
+    access_log /alidata/nginx_logs/lsh.bjpz.m.swanrov.com_access.log;
+    error_log /alidata/nginx_logs/lsh.bjpz.m.swanrov.com_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsh.bjbaidu.m.shlwed.cn;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:9002;
+    }
+    access_log /alidata/nginx_logs/lsh.bjbaidu.m.shlwed.cn_access.log;
+    error_log /alidata/nginx_logs/lsh.bjbaidu.m.shlwed.cn_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsh.bjbaidu.m.iswarov.cn;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:9002;
+    }
+    access_log /alidata/nginx_logs/lsh.bjbaidu.m.iswarov.cn_access.log;
+    error_log /alidata/nginx_logs/lsh.bjbaidu.m.iswarov.cn_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsh.bjbdlp.m.swanrov.cn;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:9002;
+    }
+    access_log /alidata/nginx_logs/lsh.bjbdlp.m.swanrov.cn_access.log;
+    error_log /alidata/nginx_logs/lsh.bjbdlp.m.swanrov.cn_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsh.bjbaidu.m.swanrov.cn;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:9002;
+    }
+    access_log /alidata/nginx_logs/lsh.bjbaidu.m.swanrov.cn_access.log;
+    error_log /alidata/nginx_logs/lsh.bjbaidu.m.swanrov.cn_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsh.bjsm.m.shlwed.cn;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:9002;
+    }
+    access_log /alidata/nginx_logs/lsh.bjsm.m.shlwed.cn_access.log;
+    error_log /alidata/nginx_logs/lsh.bjsm.m.shlwed.cn_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsh.bj360.m.shlwed.cn;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:9002;
+    }
+    access_log /alidata/nginx_logs/lsh.bj360.m.shlwed.cn_access.log;
+    error_log /alidata/nginx_logs/lsh.bj360.m.shlwed.cn_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsh.bj360.m.iswarov.cn;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:9002;
+    }
+    access_log /alidata/nginx_logs/lsh.bj360.m.iswarov.cn_access.log;
+    error_log /alidata/nginx_logs/lsh.bj360.m.iswarov.cn_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsh.bjsougou.m.shlwed.cn;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:9002;
+    }
+    access_log /alidata/nginx_logs/lsh.bjsougou.m.shlwed.cn_access.log;
+    error_log /alidata/nginx_logs/lsh.bjsougou.m.shlwed.cn_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsh.bjsougou.m.shlwed.com.cn;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:9002;
+    }
+    access_log /alidata/nginx_logs/lsh.bjsougou.m.shlwed.com.cn_access.log;
+    error_log /alidata/nginx_logs/lsh.bjsougou.m.shlwed.com.cn_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsh.2-bjsougou.m.iswarov.com;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:9002;
+    }
+    access_log /alidata/nginx_logs/lsh.2-bjsougou.m.iswarov.com_access.log;
+    error_log /alidata/nginx_logs/lsh.2-bjsougou.m.iswarov.com_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsh.bjgdt.m.shlwed.cn;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:9002;
+    }
+    access_log /alidata/nginx_logs/lsh.bjgdt.m.shlwed.cn_access.log;
+    error_log /alidata/nginx_logs/lsh.bjgdt.m.shlwed.cn_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsh.bjgdtx.m.shlwed.cn;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:9002;
+    }
+    access_log /alidata/nginx_logs/lsh.bjgdtx.m.shlwed.cn_access.log;
+    error_log /alidata/nginx_logs/lsh.bjgdtx.m.shlwed.cn_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsh.bjgdt.m.iswarov.com;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:9002;
+    }
+    access_log /alidata/nginx_logs/lsh.bjgdt.m.iswarov.com_access.log;
+    error_log /alidata/nginx_logs/lsh.bjgdt.m.iswarov.com_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsh.bjgdt2.m.swanrov.cn;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:9002;
+    }
+    access_log /alidata/nginx_logs/lsh.bjgdt2.m.swanrov.cn_access.log;
+    error_log /alidata/nginx_logs/lsh.bjgdt2.m.swanrov.cn_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsh.bjzht.m.swanrov.com;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:9002;
+    }
+    access_log /alidata/nginx_logs/lsh.bjzht.m.swanrov.com_access.log;
+    error_log /alidata/nginx_logs/lsh.bjzht.m.swanrov.com_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsh.pz.tj.iswarov.com;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:9002;
+    }
+    access_log /alidata/nginx_logs/lsh.pz.tj.iswarov.com_access.log;
+    error_log /alidata/nginx_logs/lsh.pz.tj.iswarov.com_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsh.baidujj.tj.iswarov.com;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:9002;
+    }
+    access_log /alidata/nginx_logs/lsh.baidujj.tj.iswarov.com_access.log;
+    error_log /alidata/nginx_logs/lsh.baidujj.tj.iswarov.com_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsh.360.tj.iswarov.com;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:9002;
+    }
+    access_log /alidata/nginx_logs/lsh.360.tj.iswarov.com_access.log;
+    error_log /alidata/nginx_logs/lsh.360.tj.iswarov.com_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsh.sogou.tj.iswarov.com;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:9002;
+    }
+    access_log /alidata/nginx_logs/lsh.sogou.tj.iswarov.com_access.log;
+    error_log /alidata/nginx_logs/lsh.sogou.tj.iswarov.com_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsh.gdt.tj.iswarov.com;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:9002;
+    }
+    access_log /alidata/nginx_logs/lsh.gdt.tj.iswarov.com_access.log;
+    error_log /alidata/nginx_logs/lsh.gdt.tj.iswarov.com_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsh.tjgdt1.swanrov.com.cn;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:9002;
+    }
+    access_log /alidata/nginx_logs/lsh.tjgdt1.swanrov.com.cn_access.log;
+    error_log /alidata/nginx_logs/lsh.tjgdt1.swanrov.com.cn_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsh.zht.tj.swanrov.com;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:9002;
+    }
+    access_log /alidata/nginx_logs/lsh.zht.tj.swanrov.com_access.log;
+    error_log /alidata/nginx_logs/lsh.zht.tj.swanrov.com_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsh.tjpz.m.swanrov.com;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:9002;
+    }
+    access_log /alidata/nginx_logs/lsh.tjpz.m.swanrov.com_access.log;
+    error_log /alidata/nginx_logs/lsh.tjpz.m.swanrov.com_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsh.tjbaidu.m.iswarov.com;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:9002;
+    }
+    access_log /alidata/nginx_logs/lsh.tjbaidu.m.iswarov.com_access.log;
+    error_log /alidata/nginx_logs/lsh.tjbaidu.m.iswarov.com_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsh.tj360.m.iswarov.com;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:9002;
+    }
+    access_log /alidata/nginx_logs/lsh.tj360.m.iswarov.com_access.log;
+    error_log /alidata/nginx_logs/lsh.tj360.m.iswarov.com_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsh.tjsougou.m.iswarov.com;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:9002;
+    }
+    access_log /alidata/nginx_logs/lsh.tjsougou.m.iswarov.com_access.log;
+    error_log /alidata/nginx_logs/lsh.tjsougou.m.iswarov.com_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsh.tjgdt.m.iswarov.com;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:9002;
+    }
+    access_log /alidata/nginx_logs/lsh.tjgdt.m.iswarov.com_access.log;
+    error_log /alidata/nginx_logs/lsh.tjgdt.m.iswarov.com_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsh.tjgdt1.m.swanrov.com.cn;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:9002;
+    }
+    access_log /alidata/nginx_logs/lsh.tjgdt1.m.swanrov.com.cn_access.log;
+    error_log /alidata/nginx_logs/lsh.tjgdt1.m.swanrov.com.cn_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsh.tjzht.m.swanrov.com;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:9002;
+    }
+    access_log /alidata/nginx_logs/lsh.tjzht.m.swanrov.com_access.log;
+    error_log /alidata/nginx_logs/lsh.tjzht.m.swanrov.com_error.log;
+}

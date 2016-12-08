@@ -1,0 +1,1260 @@
+server
+{
+    listen 80;
+    server_name lsg.pz.shlwed.cn;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:8080;
+    }
+    access_log /alidata/nginx_logs/lsg.pz.shlwed.cn_access.log;
+    error_log /alidata/nginx_logs/lsg.pz.shlwed.cn_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsg.baidu.shlwed.cn;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:8080;
+    }
+    access_log /alidata/nginx_logs/lsg.baidu.shlwed.cn_access.log;
+    error_log /alidata/nginx_logs/lsg.baidu.shlwed.cn_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsg.baidu.iswarov.cn;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:8080;
+    }
+    access_log /alidata/nginx_logs/lsg.baidu.iswarov.cn_access.log;
+    error_log /alidata/nginx_logs/lsg.baidu.iswarov.cn_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsg.bdlp.bj.swanrov.cn;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:8080;
+    }
+    access_log /alidata/nginx_logs/lsg.bdlp.bj.swanrov.cn_access.log;
+    error_log /alidata/nginx_logs/lsg.bdlp.bj.swanrov.cn_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsg.baidu.bj.swanrov.cn;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:8080;
+    }
+    access_log /alidata/nginx_logs/lsg.baidu.bj.swanrov.cn_access.log;
+    error_log /alidata/nginx_logs/lsg.baidu.bj.swanrov.cn_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsg.360.shlwed.cn;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:8080;
+    }
+    access_log /alidata/nginx_logs/lsg.360.shlwed.cn_access.log;
+    error_log /alidata/nginx_logs/lsg.360.shlwed.cn_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsg.360.bj.iswarov.cn;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:8080;
+    }
+    access_log /alidata/nginx_logs/lsg.360.bj.iswarov.cn_access.log;
+    error_log /alidata/nginx_logs/lsg.360.bj.iswarov.cn_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsg.sougou.shlwed.cn;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:8080;
+    }
+    access_log /alidata/nginx_logs/lsg.sougou.shlwed.cn_access.log;
+    error_log /alidata/nginx_logs/lsg.sougou.shlwed.cn_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsg.sougou.shlwed.com.cn;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:8080;
+    }
+    access_log /alidata/nginx_logs/lsg.sougou.shlwed.com.cn_access.log;
+    error_log /alidata/nginx_logs/lsg.sougou.shlwed.com.cn_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsg.2-sogou.bj.iswarov.com;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:8080;
+    }
+    access_log /alidata/nginx_logs/lsg.2-sogou.bj.iswarov.com_access.log;
+    error_log /alidata/nginx_logs/lsg.2-sogou.bj.iswarov.com_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsg.gdt.shlwed.cn;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:8080;
+    }
+    access_log /alidata/nginx_logs/lsg.gdt.shlwed.cn_access.log;
+    error_log /alidata/nginx_logs/lsg.gdt.shlwed.cn_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsg.gdtx.shlwed.cn;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:8080;
+    }
+    access_log /alidata/nginx_logs/lsg.gdtx.shlwed.cn_access.log;
+    error_log /alidata/nginx_logs/lsg.gdtx.shlwed.cn_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsg.gdt.bj.iswarov.com;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:8080;
+    }
+    access_log /alidata/nginx_logs/lsg.gdt.bj.iswarov.com_access.log;
+    error_log /alidata/nginx_logs/lsg.gdt.bj.iswarov.com_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsg.gdt2.bj.swanrov.cn;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:8080;
+    }
+    access_log /alidata/nginx_logs/lsg.gdt2.bj.swanrov.cn_access.log;
+    error_log /alidata/nginx_logs/lsg.gdt2.bj.swanrov.cn_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsg.zht.bj.swanrov.com;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:8080;
+    }
+    access_log /alidata/nginx_logs/lsg.zht.bj.swanrov.com_access.log;
+    error_log /alidata/nginx_logs/lsg.zht.bj.swanrov.com_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsg.bjpz.m.swanrov.com;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:8080;
+    }
+    access_log /alidata/nginx_logs/lsg.bjpz.m.swanrov.com_access.log;
+    error_log /alidata/nginx_logs/lsg.bjpz.m.swanrov.com_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsg.bjbaidu.m.shlwed.cn;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:8080;
+    }
+    access_log /alidata/nginx_logs/lsg.bjbaidu.m.shlwed.cn_access.log;
+    error_log /alidata/nginx_logs/lsg.bjbaidu.m.shlwed.cn_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsg.bjbaidu.m.iswarov.cn;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:8080;
+    }
+    access_log /alidata/nginx_logs/lsg.bjbaidu.m.iswarov.cn_access.log;
+    error_log /alidata/nginx_logs/lsg.bjbaidu.m.iswarov.cn_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsg.bjbdlp.m.swanrov.cn;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:8080;
+    }
+    access_log /alidata/nginx_logs/lsg.bjbdlp.m.swanrov.cn_access.log;
+    error_log /alidata/nginx_logs/lsg.bjbdlp.m.swanrov.cn_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsg.bjbaidu.m.swanrov.cn;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:8080;
+    }
+    access_log /alidata/nginx_logs/lsg.bjbaidu.m.swanrov.cn_access.log;
+    error_log /alidata/nginx_logs/lsg.bjbaidu.m.swanrov.cn_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsg.bjsm.m.shlwed.cn;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:8080;
+    }
+    access_log /alidata/nginx_logs/lsg.bjsm.m.shlwed.cn_access.log;
+    error_log /alidata/nginx_logs/lsg.bjsm.m.shlwed.cn_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsg.bj360.m.shlwed.cn;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:8080;
+    }
+    access_log /alidata/nginx_logs/lsg.bj360.m.shlwed.cn_access.log;
+    error_log /alidata/nginx_logs/lsg.bj360.m.shlwed.cn_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsg.bj360.m.iswarov.cn;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:8080;
+    }
+    access_log /alidata/nginx_logs/lsg.bj360.m.iswarov.cn_access.log;
+    error_log /alidata/nginx_logs/lsg.bj360.m.iswarov.cn_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsg.bjsougou.m.shlwed.cn;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:8080;
+    }
+    access_log /alidata/nginx_logs/lsg.bjsougou.m.shlwed.cn_access.log;
+    error_log /alidata/nginx_logs/lsg.bjsougou.m.shlwed.cn_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsg.bjsougou.m.shlwed.com.cn;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:8080;
+    }
+    access_log /alidata/nginx_logs/lsg.bjsougou.m.shlwed.com.cn_access.log;
+    error_log /alidata/nginx_logs/lsg.bjsougou.m.shlwed.com.cn_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsg.2-bjsougou.m.iswarov.com;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:8080;
+    }
+    access_log /alidata/nginx_logs/lsg.2-bjsougou.m.iswarov.com_access.log;
+    error_log /alidata/nginx_logs/lsg.2-bjsougou.m.iswarov.com_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsg.bjgdt.m.shlwed.cn;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:8080;
+    }
+    access_log /alidata/nginx_logs/lsg.bjgdt.m.shlwed.cn_access.log;
+    error_log /alidata/nginx_logs/lsg.bjgdt.m.shlwed.cn_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsg.bjgdtx.m.shlwed.cn;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:8080;
+    }
+    access_log /alidata/nginx_logs/lsg.bjgdtx.m.shlwed.cn_access.log;
+    error_log /alidata/nginx_logs/lsg.bjgdtx.m.shlwed.cn_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsg.bjgdt.m.iswarov.com;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:8080;
+    }
+    access_log /alidata/nginx_logs/lsg.bjgdt.m.iswarov.com_access.log;
+    error_log /alidata/nginx_logs/lsg.bjgdt.m.iswarov.com_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsg.bjgdt2.m.swanrov.cn;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:8080;
+    }
+    access_log /alidata/nginx_logs/lsg.bjgdt2.m.swanrov.cn_access.log;
+    error_log /alidata/nginx_logs/lsg.bjgdt2.m.swanrov.cn_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsg.bjzht.m.swanrov.com;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:8080;
+    }
+    access_log /alidata/nginx_logs/lsg.bjzht.m.swanrov.com_access.log;
+    error_log /alidata/nginx_logs/lsg.bjzht.m.swanrov.com_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsg.pz.tj.iswarov.com;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:8080;
+    }
+    access_log /alidata/nginx_logs/lsg.pz.tj.iswarov.com_access.log;
+    error_log /alidata/nginx_logs/lsg.pz.tj.iswarov.com_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsg.baidujj.tj.iswarov.com;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:8080;
+    }
+    access_log /alidata/nginx_logs/lsg.baidujj.tj.iswarov.com_access.log;
+    error_log /alidata/nginx_logs/lsg.baidujj.tj.iswarov.com_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsg.360.tj.iswarov.com;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:8080;
+    }
+    access_log /alidata/nginx_logs/lsg.360.tj.iswarov.com_access.log;
+    error_log /alidata/nginx_logs/lsg.360.tj.iswarov.com_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsg.sogou.tj.iswarov.com;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:8080;
+    }
+    access_log /alidata/nginx_logs/lsg.sogou.tj.iswarov.com_access.log;
+    error_log /alidata/nginx_logs/lsg.sogou.tj.iswarov.com_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsg.gdt.tj.iswarov.com;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:8080;
+    }
+    access_log /alidata/nginx_logs/lsg.gdt.tj.iswarov.com_access.log;
+    error_log /alidata/nginx_logs/lsg.gdt.tj.iswarov.com_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsg.tjgdt1.swanrov.com.cn;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:8080;
+    }
+    access_log /alidata/nginx_logs/lsg.tjgdt1.swanrov.com.cn_access.log;
+    error_log /alidata/nginx_logs/lsg.tjgdt1.swanrov.com.cn_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsg.zht.tj.swanrov.com;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:8080;
+    }
+    access_log /alidata/nginx_logs/lsg.zht.tj.swanrov.com_access.log;
+    error_log /alidata/nginx_logs/lsg.zht.tj.swanrov.com_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsg.tjpz.m.swanrov.com;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:8080;
+    }
+    access_log /alidata/nginx_logs/lsg.tjpz.m.swanrov.com_access.log;
+    error_log /alidata/nginx_logs/lsg.tjpz.m.swanrov.com_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsg.tjbaidu.m.iswarov.com;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:8080;
+    }
+    access_log /alidata/nginx_logs/lsg.tjbaidu.m.iswarov.com_access.log;
+    error_log /alidata/nginx_logs/lsg.tjbaidu.m.iswarov.com_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsg.tj360.m.iswarov.com;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:8080;
+    }
+    access_log /alidata/nginx_logs/lsg.tj360.m.iswarov.com_access.log;
+    error_log /alidata/nginx_logs/lsg.tj360.m.iswarov.com_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsg.tjsougou.m.iswarov.com;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:8080;
+    }
+    access_log /alidata/nginx_logs/lsg.tjsougou.m.iswarov.com_access.log;
+    error_log /alidata/nginx_logs/lsg.tjsougou.m.iswarov.com_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsg.tjgdt.m.iswarov.com;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:8080;
+    }
+    access_log /alidata/nginx_logs/lsg.tjgdt.m.iswarov.com_access.log;
+    error_log /alidata/nginx_logs/lsg.tjgdt.m.iswarov.com_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsg.tjgdt1.m.swanrov.com.cn;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:8080;
+    }
+    access_log /alidata/nginx_logs/lsg.tjgdt1.m.swanrov.com.cn_access.log;
+    error_log /alidata/nginx_logs/lsg.tjgdt1.m.swanrov.com.cn_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsg.tjzht.m.swanrov.com;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:8080;
+    }
+    access_log /alidata/nginx_logs/lsg.tjzht.m.swanrov.com_access.log;
+    error_log /alidata/nginx_logs/lsg.tjzht.m.swanrov.com_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsg.2149;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:8080;
+    }
+    access_log /alidata/nginx_logs/lsg.2149_access.log;
+    error_log /alidata/nginx_logs/lsg.2149_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsg.2150;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:8080;
+    }
+    access_log /alidata/nginx_logs/lsg.2150_access.log;
+    error_log /alidata/nginx_logs/lsg.2150_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsg.2151;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:8080;
+    }
+    access_log /alidata/nginx_logs/lsg.2151_access.log;
+    error_log /alidata/nginx_logs/lsg.2151_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsg.2152;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:8080;
+    }
+    access_log /alidata/nginx_logs/lsg.2152_access.log;
+    error_log /alidata/nginx_logs/lsg.2152_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsg.2153;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:8080;
+    }
+    access_log /alidata/nginx_logs/lsg.2153_access.log;
+    error_log /alidata/nginx_logs/lsg.2153_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsg.2154;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:8080;
+    }
+    access_log /alidata/nginx_logs/lsg.2154_access.log;
+    error_log /alidata/nginx_logs/lsg.2154_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsg.2155;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:8080;
+    }
+    access_log /alidata/nginx_logs/lsg.2155_access.log;
+    error_log /alidata/nginx_logs/lsg.2155_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsg.2156;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:8080;
+    }
+    access_log /alidata/nginx_logs/lsg.2156_access.log;
+    error_log /alidata/nginx_logs/lsg.2156_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsg.2157;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:8080;
+    }
+    access_log /alidata/nginx_logs/lsg.2157_access.log;
+    error_log /alidata/nginx_logs/lsg.2157_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsg.2158;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:8080;
+    }
+    access_log /alidata/nginx_logs/lsg.2158_access.log;
+    error_log /alidata/nginx_logs/lsg.2158_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsg.2159;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:8080;
+    }
+    access_log /alidata/nginx_logs/lsg.2159_access.log;
+    error_log /alidata/nginx_logs/lsg.2159_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsg.2160;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:8080;
+    }
+    access_log /alidata/nginx_logs/lsg.2160_access.log;
+    error_log /alidata/nginx_logs/lsg.2160_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsg.2161;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:8080;
+    }
+    access_log /alidata/nginx_logs/lsg.2161_access.log;
+    error_log /alidata/nginx_logs/lsg.2161_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsg.2162;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:8080;
+    }
+    access_log /alidata/nginx_logs/lsg.2162_access.log;
+    error_log /alidata/nginx_logs/lsg.2162_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsg.2163;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:8080;
+    }
+    access_log /alidata/nginx_logs/lsg.2163_access.log;
+    error_log /alidata/nginx_logs/lsg.2163_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsg.2164;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:8080;
+    }
+    access_log /alidata/nginx_logs/lsg.2164_access.log;
+    error_log /alidata/nginx_logs/lsg.2164_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsg.2165;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:8080;
+    }
+    access_log /alidata/nginx_logs/lsg.2165_access.log;
+    error_log /alidata/nginx_logs/lsg.2165_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsg.2166;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:8080;
+    }
+    access_log /alidata/nginx_logs/lsg.2166_access.log;
+    error_log /alidata/nginx_logs/lsg.2166_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsg.2167;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:8080;
+    }
+    access_log /alidata/nginx_logs/lsg.2167_access.log;
+    error_log /alidata/nginx_logs/lsg.2167_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsg.2168;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:8080;
+    }
+    access_log /alidata/nginx_logs/lsg.2168_access.log;
+    error_log /alidata/nginx_logs/lsg.2168_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsg.2169;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:8080;
+    }
+    access_log /alidata/nginx_logs/lsg.2169_access.log;
+    error_log /alidata/nginx_logs/lsg.2169_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsg.2170;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:8080;
+    }
+    access_log /alidata/nginx_logs/lsg.2170_access.log;
+    error_log /alidata/nginx_logs/lsg.2170_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsg.2171;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:8080;
+    }
+    access_log /alidata/nginx_logs/lsg.2171_access.log;
+    error_log /alidata/nginx_logs/lsg.2171_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsg.2172;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:8080;
+    }
+    access_log /alidata/nginx_logs/lsg.2172_access.log;
+    error_log /alidata/nginx_logs/lsg.2172_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsg.2173;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:8080;
+    }
+    access_log /alidata/nginx_logs/lsg.2173_access.log;
+    error_log /alidata/nginx_logs/lsg.2173_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsg.2174;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:8080;
+    }
+    access_log /alidata/nginx_logs/lsg.2174_access.log;
+    error_log /alidata/nginx_logs/lsg.2174_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsg.2175;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:8080;
+    }
+    access_log /alidata/nginx_logs/lsg.2175_access.log;
+    error_log /alidata/nginx_logs/lsg.2175_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsg.2176;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:8080;
+    }
+    access_log /alidata/nginx_logs/lsg.2176_access.log;
+    error_log /alidata/nginx_logs/lsg.2176_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsg.2177;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:8080;
+    }
+    access_log /alidata/nginx_logs/lsg.2177_access.log;
+    error_log /alidata/nginx_logs/lsg.2177_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsg.2178;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:8080;
+    }
+    access_log /alidata/nginx_logs/lsg.2178_access.log;
+    error_log /alidata/nginx_logs/lsg.2178_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsg.2179;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:8080;
+    }
+    access_log /alidata/nginx_logs/lsg.2179_access.log;
+    error_log /alidata/nginx_logs/lsg.2179_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsg.2180;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:8080;
+    }
+    access_log /alidata/nginx_logs/lsg.2180_access.log;
+    error_log /alidata/nginx_logs/lsg.2180_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsg.2181;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:8080;
+    }
+    access_log /alidata/nginx_logs/lsg.2181_access.log;
+    error_log /alidata/nginx_logs/lsg.2181_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsg.2182;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:8080;
+    }
+    access_log /alidata/nginx_logs/lsg.2182_access.log;
+    error_log /alidata/nginx_logs/lsg.2182_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsg.2183;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:8080;
+    }
+    access_log /alidata/nginx_logs/lsg.2183_access.log;
+    error_log /alidata/nginx_logs/lsg.2183_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsg.2184;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:8080;
+    }
+    access_log /alidata/nginx_logs/lsg.2184_access.log;
+    error_log /alidata/nginx_logs/lsg.2184_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsg.2185;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:8080;
+    }
+    access_log /alidata/nginx_logs/lsg.2185_access.log;
+    error_log /alidata/nginx_logs/lsg.2185_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsg.2186;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:8080;
+    }
+    access_log /alidata/nginx_logs/lsg.2186_access.log;
+    error_log /alidata/nginx_logs/lsg.2186_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsg.2187;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:8080;
+    }
+    access_log /alidata/nginx_logs/lsg.2187_access.log;
+    error_log /alidata/nginx_logs/lsg.2187_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsg.2188;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:8080;
+    }
+    access_log /alidata/nginx_logs/lsg.2188_access.log;
+    error_log /alidata/nginx_logs/lsg.2188_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsg.2189;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:8080;
+    }
+    access_log /alidata/nginx_logs/lsg.2189_access.log;
+    error_log /alidata/nginx_logs/lsg.2189_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsg.2190;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:8080;
+    }
+    access_log /alidata/nginx_logs/lsg.2190_access.log;
+    error_log /alidata/nginx_logs/lsg.2190_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsg.2191;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:8080;
+    }
+    access_log /alidata/nginx_logs/lsg.2191_access.log;
+    error_log /alidata/nginx_logs/lsg.2191_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsg.2192;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:8080;
+    }
+    access_log /alidata/nginx_logs/lsg.2192_access.log;
+    error_log /alidata/nginx_logs/lsg.2192_error.log;
+}
+server
+{
+    listen 80;
+    server_name lsg.2193;
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:8080;
+    }
+    access_log /alidata/nginx_logs/lsg.2193_access.log;
+    error_log /alidata/nginx_logs/lsg.2193_error.log;
+}
