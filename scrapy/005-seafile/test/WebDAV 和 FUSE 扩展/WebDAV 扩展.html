@@ -1,0 +1,1546 @@
+
+<!DOCTYPE HTML>
+<html lang="zh" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>WebDAV 扩展 · Seafile服务器手册中文版</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        <meta name="author" content="plt">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-comment/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="fuse.html" />
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="輸入並搜尋" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://www.gitbook.com/book/freeplant/seafile-manual-cn" target="_blank" class="custom-link">Seafile服务器手册中文版</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../overview/">
+            
+                <a href="../overview/">
+            
+                    
+                    概览
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../overview/components.html">
+            
+                <a href="../overview/components.html">
+            
+                    
+                    Seafile 组件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../faq.html">
+            
+                <a href="../faq.html">
+            
+                    
+                    常见问题解答
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../contribution.html">
+            
+                <a href="../contribution.html">
+            
+                    
+                    我要参与
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../deploy/">
+            
+                <a href="../deploy/">
+            
+                    
+                    Linux 下部署 Seafile 服务器
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../deploy/using_sqlite.html">
+            
+                <a href="../deploy/using_sqlite.html">
+            
+                    
+                    部署 Seafile 服务器（使用 SQLite）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../deploy/using_mysql.html">
+            
+                <a href="../deploy/using_mysql.html">
+            
+                    
+                    部署 Seafile 服务器（使用 MySQL）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../deploy/deploy_with_nginx.html">
+            
+                <a href="../deploy/deploy_with_nginx.html">
+            
+                    
+                    Nginx 下配置 Seahub
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../deploy/https_with_nginx.html">
+            
+                <a href="../deploy/https_with_nginx.html">
+            
+                    
+                    Nginx 下启用 Https
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../deploy/deploy_with_apache.html">
+            
+                <a href="../deploy/deploy_with_apache.html">
+            
+                    
+                    Apache 下配置 Seahub
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../deploy/https_with_apache.html">
+            
+                <a href="../deploy/https_with_apache.html">
+            
+                    
+                    Apache 下启用 Https
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../deploy/upgrade.html">
+            
+                <a href="../deploy/upgrade.html">
+            
+                    
+                    升级
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" >
+            
+                <span>
+            
+                    
+                    其他部署说明
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.8.1" data-path="../deploy/start_seafile_at_system_bootup.html">
+            
+                <a href="../deploy/start_seafile_at_system_bootup.html">
+            
+                    
+                    开机启动 Seafile
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8.2" data-path="../deploy/using_firewall.html">
+            
+                <a href="../deploy/using_firewall.html">
+            
+                    
+                    防火墙设置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8.3" data-path="../deploy/using_logrotate.html">
+            
+                <a href="../deploy/using_logrotate.html">
+            
+                    
+                    Logrotate 管理系统日志
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8.4" data-path="../deploy/add_memcached.html">
+            
+                <a href="../deploy/add_memcached.html">
+            
+                    
+                    使用 Memcached
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8.5" data-path="../deploy/deploy_seafile_behind_nat.html">
+            
+                <a href="../deploy/deploy_seafile_behind_nat.html">
+            
+                    
+                    使用 NAT
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8.6" data-path="../deploy/migrate_from_sqlite_to_mysql.html">
+            
+                <a href="../deploy/migrate_from_sqlite_to_mysql.html">
+            
+                    
+                    从 SQLite 迁移至 MySQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="../faq.html">
+            
+                <a href="../faq.html">
+            
+                    
+                    安装常见问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.10" data-path="../deploy/new_directory_layout_5_0_0.html">
+            
+                <a href="../deploy/new_directory_layout_5_0_0.html">
+            
+                    
+                    Seafile 服务器 5.0 中配置文件新位置
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../deploy_windows/deploy_with_windows.html">
+            
+                <a href="../deploy_windows/deploy_with_windows.html">
+            
+                    
+                    Windows 下部署 Seafile 服务器
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../deploy_windows/download_and_setup_seafile_windows_server.html">
+            
+                <a href="../deploy_windows/download_and_setup_seafile_windows_server.html">
+            
+                    
+                    下载安装 Windows 版 Seafile 服务器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../deploy_windows/install_seafile_server_as_a_windows_service.html">
+            
+                <a href="../deploy_windows/install_seafile_server_as_a_windows_service.html">
+            
+                    
+                    安装 Seafile 为 Windows 服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../deploy_windows/ports_used_by_seafile_windows_server.html">
+            
+                <a href="../deploy_windows/ports_used_by_seafile_windows_server.html">
+            
+                    
+                    所用端口说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../deploy_windows/upgrading_seafile_windows_server.html">
+            
+                <a href="../deploy_windows/upgrading_seafile_windows_server.html">
+            
+                    
+                    升级
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../deploy_windows/migrate_from_win_to_linux.html">
+            
+                <a href="../deploy_windows/migrate_from_win_to_linux.html">
+            
+                    
+                    从 Windows 迁移到 Linux
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../deploy_windows/windows_gc.html">
+            
+                <a href="../deploy_windows/windows_gc.html">
+            
+                    
+                    垃圾回收
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../deploy_pro/">
+            
+                <a href="../deploy_pro/">
+            
+                    
+                    部署 Seafile 专业版服务器
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../deploy_pro/download_and_setup_seafile_professional_server.html">
+            
+                <a href="../deploy_pro/download_and_setup_seafile_professional_server.html">
+            
+                    
+                    下载安装 Seafile 专业版服务器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../deploy_pro/migrate_from_seafile_community_server.html">
+            
+                <a href="../deploy_pro/migrate_from_seafile_community_server.html">
+            
+                    
+                    从社区版迁移至专业版
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../deploy_pro/upgrading_seafile_professional_server.html">
+            
+                <a href="../deploy_pro/upgrading_seafile_professional_server.html">
+            
+                    
+                    升级
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../deploy_pro/oracle.html">
+            
+                <a href="../deploy_pro/oracle.html">
+            
+                    
+                    使用 Oracle 数据库部署
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../deploy_pro/using_ldap_pro.html">
+            
+                <a href="../deploy_pro/using_ldap_pro.html">
+            
+                    
+                    专业版 AD/LDAP 配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../deploy_pro/ldap_group_sync.html">
+            
+                <a href="../deploy_pro/ldap_group_sync.html">
+            
+                    
+                    同步 AD 群组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="../deploy_pro/office_documents_preview.html">
+            
+                <a href="../deploy_pro/office_documents_preview.html">
+            
+                    
+                    开启 Office/PDF 文件在线预览
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="../deploy_pro/office_web_app.html">
+            
+                <a href="../deploy_pro/office_web_app.html">
+            
+                    
+                    Office Web App 集成
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="../deploy_pro/details_about_file_search.html">
+            
+                <a href="../deploy_pro/details_about_file_search.html">
+            
+                    
+                    文件搜索说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.10" data-path="../deploy_pro/virus_scan.html">
+            
+                <a href="../deploy_pro/virus_scan.html">
+            
+                    
+                    病毒扫描
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.10.1" data-path="../deploy_pro/virus_scan_with_kav4fs.html">
+            
+                <a href="../deploy_pro/virus_scan_with_kav4fs.html">
+            
+                    
+                    卡巴斯基病毒扫描配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.11" data-path="../deploy_pro/web_resumable_upload.html">
+            
+                <a href="../deploy_pro/web_resumable_upload.html">
+            
+                    
+                    Web 文件断点续传
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.12" >
+            
+                <span>
+            
+                    
+                    存储后端
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.12.1" data-path="../deploy_pro/setup_with_amazon_s3.html">
+            
+                <a href="../deploy_pro/setup_with_amazon_s3.html">
+            
+                    
+                    Amazon S3 下安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.12.2" data-path="../deploy_pro/setup_with_openstackswift.html">
+            
+                <a href="../deploy_pro/setup_with_openstackswift.html">
+            
+                    
+                    OpenStackSwift 下安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.12.3" data-path="../deploy_pro/setup_with_ceph.html">
+            
+                <a href="../deploy_pro/setup_with_ceph.html">
+            
+                    
+                    Ceph 下安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.12.4" data-path="../deploy_pro/setup_with_oss.html">
+            
+                <a href="../deploy_pro/setup_with_oss.html">
+            
+                    
+                    使用阿里云OSS存储
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.13" >
+            
+                <span>
+            
+                    
+                    集群部署
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.13.1" data-path="../deploy_pro/deploy_in_a_cluster.html">
+            
+                <a href="../deploy_pro/deploy_in_a_cluster.html">
+            
+                    
+                    集群部署
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.13.2" data-path="../deploy_pro/enable_search_and_background_tasks_in_a_cluster.html">
+            
+                <a href="../deploy_pro/enable_search_and_background_tasks_in_a_cluster.html">
+            
+                    
+                    集群中启用搜索和后台服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.13.3" data-path="../deploy_pro/setup_seafile_cluster_with_nfs.html">
+            
+                <a href="../deploy_pro/setup_seafile_cluster_with_nfs.html">
+            
+                    
+                    NFS 下集群安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.13.4" data-path="../deploy_pro/upgrade_a_cluster.html">
+            
+                <a href="../deploy_pro/upgrade_a_cluster.html">
+            
+                    
+                    升级集群
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.14" data-path="../deploy_pro/roles_permissions.html">
+            
+                <a href="../deploy_pro/roles_permissions.html">
+            
+                    
+                    用户角色与权限
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.15" data-path="../deploy_pro/configurable_options.html">
+            
+                <a href="../deploy_pro/configurable_options.html">
+            
+                    
+                    配置选项
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.16" data-path="../deploy_pro/faq_for_seafile_pro_server.html">
+            
+                <a href="../deploy_pro/faq_for_seafile_pro_server.html">
+            
+                    
+                    常见问题解答
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.17" data-path="../deploy_pro/license-pro-edition.html">
+            
+                <a href="../deploy_pro/license-pro-edition.html">
+            
+                    
+                    软件许可协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../config/">
+            
+                <a href="../config/">
+            
+                    
+                    服务器个性化配置
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../config/ccnet-conf.html">
+            
+                <a href="../config/ccnet-conf.html">
+            
+                    
+                    ccnet.conf
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../config/seafile-conf.html">
+            
+                <a href="../config/seafile-conf.html">
+            
+                    
+                    seafile.conf
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../config/seahub_settings_py.html">
+            
+                <a href="../config/seahub_settings_py.html">
+            
+                    
+                    seahub_settings.py
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../config/sending_email.html">
+            
+                <a href="../config/sending_email.html">
+            
+                    
+                    发送邮件提醒
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../config/customize_email_notifications.html">
+            
+                <a href="../config/customize_email_notifications.html">
+            
+                    
+                    个性化邮件提醒
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="../config/quota_and_size_options.html">
+            
+                <a href="../config/quota_and_size_options.html">
+            
+                    
+                    存储容量与文件上传/下载大小限制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" data-path="../config/seahub_customization.html">
+            
+                <a href="../config/seahub_customization.html">
+            
+                    
+                    自定义 Web
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../maintain/">
+            
+                <a href="../maintain/">
+            
+                    
+                    日常维护
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../maintain/account.html">
+            
+                <a href="../maintain/account.html">
+            
+                    
+                    账户管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../maintain/logs.html">
+            
+                <a href="../maintain/logs.html">
+            
+                    
+                    日志
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../maintain/clean_database.html">
+            
+                <a href="../maintain/clean_database.html">
+            
+                    
+                    清理数据库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../maintain/backup_recovery.html">
+            
+                <a href="../maintain/backup_recovery.html">
+            
+                    
+                    备份与恢复
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="../maintain/seafile_fsck.html">
+            
+                <a href="../maintain/seafile_fsck.html">
+            
+                    
+                    Seafile FSCK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6" data-path="../maintain/seafile_gc.html">
+            
+                <a href="../maintain/seafile_gc.html">
+            
+                    
+                    Seafile GC
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    WebDAV 和 FUSE 扩展
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.8.1" data-path="webdav.html">
+            
+                <a href="webdav.html">
+            
+                    
+                    WebDAV 扩展
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="fuse.html">
+            
+                <a href="fuse.html">
+            
+                    
+                    FUSE 扩展
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../security/">
+            
+                <a href="../security/">
+            
+                    
+                    安全选项
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../security/security_features.html">
+            
+                <a href="../security/security_features.html">
+            
+                    
+                    安全特性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../security/auditing.html">
+            
+                <a href="../security/auditing.html">
+            
+                    
+                    日志和审计
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../develop/">
+            
+                <a href="../develop/">
+            
+                    
+                    开发文档
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本書使用 GitBook 釋出
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >WebDAV 扩展</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="webdav&#x6269;&#x5C55;">WebDAV&#x6269;&#x5C55;</h1>
+<p>Seafile WebDAV Server(SeafDAV)&#x5728;Seafile Server 2.1.0&#x7248;&#x672C;&#x4E2D;&#x88AB;&#x52A0;&#x5165;.</p>
+<p>&#x5728;&#x4E0B;&#x9762;&#x7684;&#x7EF4;&#x57FA;&#x4E2D;, &#x6211;&#x4EEC;&#x5047;&#x8BBE;&#x4F60;&#x5C06;Seafile&#x5B89;&#x88C5;&#x5230;<code>/data/haiwen</code>&#x76EE;&#x5F55;&#x4E0B;&#x3002;</p>
+<h2 id="seafdav&#x914D;&#x7F6E;">SeafDAV&#x914D;&#x7F6E;</h2>
+<p>SeafDAV&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x662F;<code>/data/haiwen/conf/seafdav.conf</code>. &#x5982;&#x679C;&#x5B83;&#x8FD8;&#x6CA1;&#x6709;&#x88AB;&#x521B;&#x5EFA;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x81EA;&#x884C;&#x521B;&#x5EFA;&#x5B83;&#x3002;</p>
+<pre>
+[WEBDAV]
+
+# &#x9ED8;&#x8BA4;&#x503C;&#x662F;false&#x3002;&#x6539;&#x4E3A;true&#x6765;&#x4F7F;&#x7528;SeafDAV server&#x3002;
+enabled = true
+
+port = 8080
+
+# &#x5982;&#x679C;fastcgi&#x5C06;&#x88AB;&#x4F7F;&#x7528;&#x5219;&#x66F4;&#x6539;fastcgi&#x7684;&#x503C;&#x4E3A;true&#x3002;
+fastcgi = false
+
+# &#x5982;&#x679C;&#x4F60;&#x5C06;seafdav&#x90E8;&#x7F72;&#x5230;nginx/apache&#xFF0C;&#x4F60;&#x9700;&#x8981;&#x66F4;&#x6539;&#x201C;share_name&#x201D;&#x7684;&#x503C;&#x3002;
+share_name = /
+</pre>
+
+<p>&#x6BCF;&#x6B21;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x88AB;&#x4FEE;&#x6539;&#x540E;&#xFF0C;&#x4F60;&#x9700;&#x8981;&#x91CD;&#x542F;Seafile&#x670D;&#x52A1;&#x5668;&#x4F7F;&#x4E4B;&#x751F;&#x6548;&#x3002;</p>
+<pre>
+./seafile.sh restart
+</pre>
+
+
+<h3 id="&#x793A;&#x4F8B;&#x914D;&#x7F6E;-1-no-nginxapache">&#x793A;&#x4F8B;&#x914D;&#x7F6E; 1: No nginx/apache</h3>
+<p>&#x4F60;&#x7684;WebDAV&#x5BA2;&#x6237;&#x7AEF;&#x5C06;&#x5728;&#x5730;&#x5740;<code>http://example.com:8080</code>&#x8BBF;&#x95EE;WebDAV&#x670D;&#x52A1;&#x5668;&#x3002;</p>
+<pre>
+[WEBDAV]
+enabled = true
+port = 8080
+fastcgi = false
+share_name = /
+</pre>
+
+<h3 id="&#x793A;&#x4F8B;&#x914D;&#x7F6E;-2-with-nginxapache">&#x793A;&#x4F8B;&#x914D;&#x7F6E; 2: With Nginx/Apache</h3>
+<p>&#x4F60;&#x7684;WebDAV&#x5BA2;&#x6237;&#x7AEF;&#x5C06;&#x5728;&#x5730;&#x5740;<code>http://example.com/seafdav</code>&#x8BBF;&#x95EE;WebDAV&#x670D;&#x52A1;&#x5668;&#x3002;</p>
+<pre>
+[WEBDAV]
+enabled = true
+port = 8080
+fastcgi = true
+share_name = /seafdav
+</pre>
+
+<p>&#x5728;&#x4E0A;&#x9762;&#x7684;&#x914D;&#x7F6E;&#x4E2D;&#xFF0C;&apos;&apos;&apos;share_name&apos;&apos;&apos;&#x7684;&#x503C;&#x88AB;&#x6539;&#x4E3A;&apos;&apos;&apos;/seafdav&apos;&apos;&apos;, &#x5B83;&#x662F;&#x4F60;&#x6307;&#x5B9A;&#x7ED9;seafdav&#x670D;&#x52A1;&#x5668;&#x7684;&#x5730;&#x5740;&#x540E;&#x7F00;&#x3002;</p>
+<h4 id="nginx-&#x65E0;-https">Nginx &#x65E0; HTTPS</h4>
+<p>&#x76F8;&#x5E94;&#x7684;Nginx&#x914D;&#x7F6E;&#x5982;&#x4E0B; (&#x65E0; https):</p>
+<pre>
+     location /seafdav {
+        fastcgi_pass    127.0.0.1:8080;
+        fastcgi_param   SCRIPT_FILENAME     $document_root$fastcgi_script_name;
+        fastcgi_param   PATH_INFO           $fastcgi_script_name;
+
+        fastcgi_param   SERVER_PROTOCOL     $server_protocol;
+        fastcgi_param   QUERY_STRING        $query_string;
+        fastcgi_param   REQUEST_METHOD      $request_method;
+        fastcgi_param   CONTENT_TYPE        $content_type;
+        fastcgi_param   CONTENT_LENGTH      $content_length;
+        fastcgi_param   SERVER_ADDR         $server_addr;
+        fastcgi_param   SERVER_PORT         $server_port;
+        fastcgi_param   SERVER_NAME         $server_name;
+
+        client_max_body_size 0;
+
+        access_log      /var/log/nginx/seafdav.access.log;
+        error_log       /var/log/nginx/seafdav.error.log;
+    }
+</pre>
+
+<h4 id="nginx-&#x6709;-https">Nginx &#x6709; HTTPS</h4>
+<p>Nginx&#x914D;&#x7F6E;&#x4E3A;https:</p>
+<pre>
+     location /seafdav {
+        fastcgi_pass    127.0.0.1:8080;
+        fastcgi_param   SCRIPT_FILENAME     $document_root$fastcgi_script_name;
+        fastcgi_param   PATH_INFO           $fastcgi_script_name;
+
+        fastcgi_param   SERVER_PROTOCOL     $server_protocol;
+        fastcgi_param   QUERY_STRING        $query_string;
+        fastcgi_param   REQUEST_METHOD      $request_method;
+        fastcgi_param   CONTENT_TYPE        $content_type;
+        fastcgi_param   CONTENT_LENGTH      $content_length;
+        fastcgi_param   SERVER_ADDR         $server_addr;
+        fastcgi_param   SERVER_PORT         $server_port;
+        fastcgi_param   SERVER_NAME         $server_name;
+
+        client_max_body_size 0;
+
+        fastcgi_param   HTTPS               on;
+
+        access_log      /var/log/nginx/seafdav.access.log;
+        error_log       /var/log/nginx/seafdav.error.log;
+    }
+</pre>
+
+<h4 id="apache">Apache</h4>
+<p>&#x9996;&#x5148;&#x7F16;&#x8F91; <code>apache2.conf</code> &#x6587;&#x4EF6;, &#x6DFB;&#x52A0;&#x5982;&#x4E0B;&#x8FD9;&#x884C;&#x5230;&#x6587;&#x4EF6;&#x7ED3;&#x5C3E;(&#x6216;&#x8005;&#x6839;&#x636E;&#x4F60;&#x7684;Linux&#x53D1;&#x884C;&#x7248;&#x5C06;&#x5176;&#x6DFB;&#x52A0;&#x5230; <code>httpd.conf</code>):</p>
+<pre>
+FastCGIExternalServer /var/www/seafdav.fcgi -host 127.0.0.1:8080
+</pre>
+
+<p>&#x6CE8;&#x610F;, <code>/var/www/seafdav.fcgi</code> &#x4EC5;&#x4EC5;&#x53EA;&#x662F;&#x4E00;&#x4E2A;&#x5360;&#x4F4D;&#x7B26;, &#x5B9E;&#x9645;&#x5728;&#x4F60;&#x7684;&#x7CFB;&#x7EDF;&#x5E76;&#x4E0D;&#x9700;&#x8981;&#x6709;&#x6B64;&#x6587;&#x4EF6;&#x3002;</p>
+<p>&#x7B2C;&#x4E8C;, &#x4FEE;&#x6539;Apache&#x914D;&#x7F6E;&#x6587;&#x4EF6; (site-enabled/000-default):</p>
+<h4 id="apache-&#x65E0;-https">Apache &#x65E0; HTTPS</h4>
+<p>&#x6839;&#x636E;&#x4F60;&#x7684;Apache&#x914D;&#x7F6E;&#x5F53;&#x4F60;[&#x5C06;&#x8981;&#x90E8;&#x7F72; Seafile &#x548C; Apache|&#x5DF2;&#x7ECF;&#x90E8;&#x7F72; Seafile &#x548C; Apache], &#x52A0;&#x5165;Seafdav&#x7684;&#x76F8;&#x5173;&#x914D;&#x7F6E;:</p>
+<pre>
+<virtualhost *:80="">
+
+ServerName www.myseafile.com
+  DocumentRoot /var/www
+  Alias /media  /home/user/haiwen/seafile-server/seahub/media
+
+  RewriteEngine On
+
+  #
+  # seafile fileserver
+  #
+  ProxyPass /seafhttp http://127.0.0.1:8082
+  ProxyPassReverse /seafhttp http://127.0.0.1:8082
+  RewriteRule ^/seafhttp - [QSA,L]
+
+  #
+  # seafile webdav
+  #
+  RewriteCond %{HTTP:Authorization} (.+)
+  RewriteRule ^(/seafdav.*)$ /seafdav.fcgi$1 [QSA,L,e=HTTP_AUTHORIZATION:%1]
+  RewriteRule ^(/seafdav.*)$ /seafdav.fcgi$1 [QSA,L]
+
+  #
+  # seahub
+  #
+  RewriteRule ^/(media.*)$ /$1 [QSA,L,PT]
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteRule ^(.*)$ /seahub.fcgi$1 [QSA,L,E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+</virtualhost>
+</pre>
+
+<h4 id="apache-&#x6709;-https">Apache &#x6709; HTTPS</h4>
+<p>&#x6839;&#x636E;&#x4F60;&#x7684;apache&#x914D;&#x7F6E;&#x5F53;&#x4F60;<a href="../deploy/https_with_apache.html">&#x914D;&#x7F6E;Seafile&#x7F51;&#x7AD9;&#x548C;Apache&#x5E76;&#x542F;&#x7528;Https</a>, &#x52A0;&#x5165;seafdav&#x7684;&#x76F8;&#x5173;&#x914D;&#x7F6E;:</p>
+<pre>
+<virtualhost *:443="">
+
+ServerName www.myseafile.com
+  DocumentRoot /var/www
+  Alias /media  /home/user/haiwen/seafile-server/seahub/media
+
+  SSLEngine On
+  SSLCertificateFile /etc/ssl/cacert.pem
+  SSLCertificateKeyFile /etc/ssl/privkey.pem
+
+  RewriteEngine On
+
+  #
+  # seafile fileserver
+  #
+  ProxyPass /seafhttp http://127.0.0.1:8082
+  ProxyPassReverse /seafhttp http://127.0.0.1:8082
+  RewriteRule ^/seafhttp - [QSA,L]
+
+  #
+  # seafile webdav
+  #
+  RewriteCond %{HTTP:Authorization} (.+)
+  RewriteRule ^(/seafdav.*)$ /seafdav.fcgi$1 [QSA,L,e=HTTP_AUTHORIZATION:%1]
+  RewriteRule ^(/seafdav.*)$ /seafdav.fcgi$1 [QSA,L]
+
+  #
+  # seahub
+  #
+  RewriteRule ^/(media.*)$ /$1 [QSA,L,PT]
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteRule ^(.*)$ /seahub.fcgi$1 [QSA,L,E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+</virtualhost>
+</pre>
+
+<h2 id="&#x5173;&#x4E8E;&#x5BA2;&#x6237;&#x7AEF;&#x7684;&#x6CE8;&#x610F;&#x4E8B;&#x9879;">&#x5173;&#x4E8E;&#x5BA2;&#x6237;&#x7AEF;&#x7684;&#x6CE8;&#x610F;&#x4E8B;&#x9879;</h2>
+<h3 id="windows">Windows</h3>
+<p>&#x5728;Windows&#x5E73;&#x53F0;&#xFF0C;&#x6211;&#x4EEC;&#x63A8;&#x8350;&#x4F7F;&#x7528;webdav&#x5BA2;&#x6237;&#x7AEF;&#x8F6F;&#x4EF6;&#x4F8B;&#x5982;Cyberduck&#x6216;BitKinex.
+webdav&#x5BF9;&#x4E8E;Windows&#x6D4F;&#x89C8;&#x5668;&#x7684;&#x652F;&#x6301;&#x5B9E;&#x73B0;&#x5E76;&#x4E0D;&#x662F;&#x5341;&#x5206;&#x53EF;&#x7528;&#xFF0C;&#x56E0;&#x4E3A;&#xFF1A;</p>
+<pre><code>Windows &#x6D4F;&#x89C8;&#x5668;&#x9700;&#x8981;&#x5229;&#x7528;HTTP&#x6570;&#x5B57;&#x8BA4;&#x8BC1;&#x3002;&#x4F46;&#x662F;&#x7531;&#x4E8E;Seafile&#x5728;&#x670D;&#x52A1;&#x5668;&#x7AEF;&#x4E0D;&#x5B58;&#x50A8;&#x7EAF;&#x6587;&#x672C;&#x5BC6;&#x7801;&#xFF0C;&#x6240;&#x4EE5;&#x5B83;&#x4E0D;&#x652F;&#x6301;&#x8FD9;&#x4E2A;&#x7279;&#x6027;&#x3002;HTTP&#x57FA;&#x672C;&#x8BA4;&#x8BC1;&#x53EA;&#x88AB;HTTPS&#x652F;&#x6301;&#xFF08;&#x8FD9;&#x662F;&#x5408;&#x7406;&#x7684;&#xFF09;&#x3002;&#x4F46;&#x662F;&#x6D4F;&#x89C8;&#x5668;&#x4E0D;&#x652F;&#x6301;&#x81EA;&#x6211;&#x7B7E;&#x7F72;&#x7684;&#x8BC1;&#x4E66;&#x3002;
+</code></pre><p>&#x7ED3;&#x8BBA;&#x5C31;&#x662F;&#x5982;&#x679C;&#x4F60;&#x6709;&#x4E00;&#x4E2A;&#x5408;&#x6CD5;&#x7684;ssl&#x8BC1;&#x4E66;&#xFF0C;&#x4F60;&#x5E94;&#x8BE5;&#x80FD;&#x8FC7;&#x901A;&#x8FC7;Windows&#x6D4F;&#x89C8;&#x5668;&#x6765;&#x8BBF;&#x95EE;seafdav&#x3002;&#x5426;&#x5219;&#x4F60;&#x5E94;&#x8BE5;&#x4F7F;&#x7528;&#x5BA2;&#x6237;&#x7AEF;&#x8F6F;&#x4EF6;&#x3002;Windows XP&#x88AB;&#x58F0;&#x660E;&#x4E0D;&#x652F;&#x6301;HTTPS webdav.</p>
+<h3 id="linux">Linux</h3>
+<p>&#x5728;Linux&#x5E73;&#x53F0;&#x4F60;&#x6709;&#x66F4;&#x591A;&#x7684;&#x9009;&#x62E9;&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x5229;&#x7528;&#x6587;&#x4EF6;&#x7BA1;&#x7406;&#x5668;&#x4F8B;&#x5982;Nautilus&#x6765;&#x8FDE;&#x63A5;webdav&#x670D;&#x52A1;&#x5668;&#xFF0C;&#x6216;&#x8005;&#x5728;&#x547D;&#x4EE4;&#x884C;&#x4F7F;&#x7528;davfs2&#x3002;</p>
+<p>&#x4F7F;&#x7528;davfs2</p>
+<pre>
+sudo apt-get install davfs2
+sudo mount -t davfs -o uid=<username> https://example.com/seafdav /media/seafdav/
+</username></pre>
+
+<p>-o&#x9009;&#x9879;&#x8BBE;&#x7F6E;&#x6302;&#x8F7D;&#x76EE;&#x5F55;&#x7684;&#x62E5;&#x6709;&#x8005;&#x4E3A;<username>&#xFF0C;&#x4F7F;&#x5F97;&#x975E;root&#x7528;&#x6237;&#x62E5;&#x6709;&#x53EF;&#x5199;&#x6743;&#x9650;&#x3002;</username></p>
+<p>&#x6211;&#x4EEC;&#x5EFA;&#x8BAE;&#x5BF9;&#x4E8E;davfs2&#xFF0C;&#x7981;&#x7528;&#x9501;&#x64CD;&#x4F5C;&#x3002;&#x4F60;&#x9700;&#x8981;&#x7F16;&#x8F91;/etc/davfs2/davfs2.conf</p>
+<pre>
+ use_locks       0
+</pre>
+
+<h3 id="mac-os-x">Mac OS X</h3>
+<p>Finder&#x5BF9;&#x4E8E;WebDAV&#x7684;&#x652F;&#x6301;&#x4E0D;&#x7A33;&#x5B9A;&#x800C;&#x4E14;&#x8F83;&#x6162;. &#x6240;&#x4EE5;&#x6211;&#x4EEC;&#x5EFA;&#x8BAE;&#x4F7F;&#x7528;webdav&#x5BA2;&#x6237;&#x7AEF;&#x8F6F;&#x4EF6;&#x5982;Cyberduck.</p>
+<h2 id="&#x5E38;&#x89C1;&#x95EE;&#x9898;">&#x5E38;&#x89C1;&#x95EE;&#x9898;</h2>
+<h3 id="&#x5BA2;&#x6237;&#x7AEF;&#x65E0;&#x6CD5;&#x8FDE;&#x63A5;seafdav&#x670D;&#x52A1;&#x5668;">&#x5BA2;&#x6237;&#x7AEF;&#x65E0;&#x6CD5;&#x8FDE;&#x63A5;seafdav&#x670D;&#x52A1;&#x5668;</h3>
+<p>&#x9ED8;&#x8BA4;, seafdav&#x662F;&#x672A;&#x88AB;&#x542F;&#x7528;&#x7684;&#x3002;&#x68C0;&#x67E5;&#x4F60;&#x662F;&#x5426;&#x5728;<code>seafdav.conf</code>&#x4E2D;&#x8BBE;&#x7F6E;<code>enabled = true</code>&#x3002; 
+&#x5982;&#x679C;&#x6CA1;&#x6709;&#xFF0C;&#x66F4;&#x6539;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x5E76;&#x91CD;&#x542F;seafle&#x670D;&#x52A1;&#x5668;&#x3002;</p>
+<h3 id="&#x5BA2;&#x6237;&#x7AEF;&#x5F97;&#x5230;error-404-not-found&#x9519;&#x8BEF;">&#x5BA2;&#x6237;&#x7AEF;&#x5F97;&#x5230;&quot;Error: 404 Not Found&quot;&#x9519;&#x8BEF;</h3>
+<p>&#x5982;&#x679C;&#x4F60;&#x5C06;SeafDAV&#x90E8;&#x7F72;&#x5728;Nginx/Apache, &#x8BF7;&#x786E;&#x4FDD;&#x50CF;&#x4E0A;&#x9762;&#x7684;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x4E00;&#x6837;&#x66F4;&#x6539;<code>share_name</code>&#x7684;&#x503C;&#x3002;&#x91CD;&#x542F;Seafile&#x670D;&#x52A1;&#x5668;&#x540E;&#x91CD;&#x65B0;&#x6D4B;&#x8BD5;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: WebDAV 和 FUSE 扩展">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="fuse.html" class="navigation navigation-next " aria-label="Next page: FUSE 扩展">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"WebDAV 扩展","level":"1.8.1","depth":2,"next":{"title":"FUSE 扩展","level":"1.8.2","depth":2,"path":"extension/fuse.md","ref":"extension/fuse.md","articles":[]},"previous":{"title":"WebDAV 和 FUSE 扩展","level":"1.8","depth":1,"path":"extension/README.md","ref":"extension/README.md","articles":[{"title":"WebDAV 扩展","level":"1.8.1","depth":2,"path":"extension/webdav.md","ref":"extension/webdav.md","articles":[]},{"title":"FUSE 扩展","level":"1.8.2","depth":2,"path":"extension/fuse.md","ref":"extension/fuse.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["comment"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"fontSettings":{"theme":"white","family":"sans","size":1},"comment":{"highlightCommented":true},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"github":"haiwen/seafile-docs-cn","theme":"./localtheme","githubHost":"https://github.com/","author":"plt","pdf":{"pageNumbers":false,"fontSize":16,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":36,"bottom":36},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Seafile服务器手册中文版","language":"zh","links":{"home":null,"about":null,"issues":null,"contribute":null,"sharing":{"google":null,"facebook":null,"twitter":null},"sidebar":{"Seafile服务器手册中文版":"https://www.gitbook.com/book/freeplant/seafile-manual-cn"},"gitbook":true},"gitbook":"*","description":""},"file":{"path":"extension/webdav.md","mtime":"2016-12-16T07:48:53.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2016-12-16T07:48:49.275Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-comment/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    
+<div><script style="display: none;" type="application/javascript">
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-57505611-7', 'auto', {name: 'microcdn'});
+  ga('microcdn.send', 'pageview');
+
+  var _cdn_prev_loc = window.location.pathname;
+  window.setInterval(function () {
+    if (window.location.pathname !== _cdn_prev_loc) {
+      _cdn_prev_loc = window.location.pathname;
+      ga('microcdn.send', 'pageview');
+    }
+  }, 100);
+
+</script></div>
+</body>
+</html>
+
+

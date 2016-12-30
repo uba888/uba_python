@@ -15,7 +15,7 @@ def df_use(path):
 	avail=df_root.f_bavail*df_root.f_bsize/(1024*1024*1024)
 	Size=df_root.f_bsize*df_root.f_blocks/(1024*1024*1024)
 	use=int((Size-avail)*100/Size)
-	return use
+	return use,int(Size-avail)
 
 
 def df_all():
@@ -23,7 +23,7 @@ def df_all():
 	df['sysid']=ip
 	df['_id']=time.strftime("%Y%m%d",time.localtime(time.time()))+"+"+ip
 	for i in df_list:
-		df['df_'+i[1:]]=df_use(i)
+		df['df_'+i[1:]],df['df_'+i[1:]+'_size']=df_use(i)
 	return df
 
 def get_df():
@@ -44,6 +44,7 @@ def get_df():
 	else:
 		print("%s的/目录涨了%d百分点;alidata涨了%d百分点" % (ip,cha_,cha_alidata))
 df =df_all()
+print(df)
 try:
 	clt.insert_one(df)
 except pymongo.errors.DuplicateKeyError:
